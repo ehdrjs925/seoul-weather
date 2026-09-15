@@ -9,7 +9,6 @@ import streamlit as st
 
 DATA_URL = 'https://raw.githubusercontent.com/greatsong/modudata/main/data/seoul.csv'
 
-
 @st.cache_data(ttl=3600, show_spinner=False)
 def load_data():
     local = Path(__file__).with_name('seoul.csv')
